@@ -4,7 +4,6 @@ import './index.css'
 
 
 function MovieCard({ data }) {
-    console.log(data, "data")
     const imageURl = 'https://image.tmdb.org/t/p/w500' + data.backdrop_path 
   return (
     <Link to={`/movie/:${data.id}`} style={{textDecoration: 'none', color:'inherit'}}>

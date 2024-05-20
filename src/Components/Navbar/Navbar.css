@@ -1,5 +1,5 @@
 .navbar-container {
-    padding: 5px 15px;
+    padding:  10px 15px;
     background-color: #032541;
     margin-bottom: -20px;
 }
@@ -11,6 +11,7 @@
 .nav-logo {
     color: #509e97;
     cursor: pointer;
+    text-decoration: none;
 }
 .mobile-menu-icon {
      color: #509e97;

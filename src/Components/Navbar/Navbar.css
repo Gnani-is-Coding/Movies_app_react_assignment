@@ -1,6 +1,7 @@
 .navbar-container {
     padding: 5px 15px;
     background-color: #032541;
+    margin-bottom: -20px;
 }
 .logo-container {
     display: flex;

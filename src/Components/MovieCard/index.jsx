@@ -1,10 +1,13 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import './index.css'
+
 
 function MovieCard({ data }) {
     console.log(data, "data")
     const imageURl = 'https://image.tmdb.org/t/p/w500' + data.backdrop_path 
   return (
+    <Link to={`/movie/:${data.id}`} style={{textDecoration: 'none', color:'inherit'}}>
     <div className='card-container'>
         <img src={imageURl} alt={data.original_title} className='image'/>
 
@@ -16,6 +19,7 @@ function MovieCard({ data }) {
             </div>
         </div>
     </div>
+    </Link>
   )
 }
 

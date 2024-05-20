@@ -5,6 +5,7 @@ import { FaArrowRight } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa";
 import 'ldrs/grid'
 import { grid } from 'ldrs';
+import { Link } from 'react-router-dom';
 
 grid.register()
 
@@ -63,7 +64,7 @@ function PopularMovies() {
                 </div>:
                 <ul className='movies-container'>
                 {mveList.map((obj) => (
-                    <li key={obj.id}>
+                    <li key={obj.id} >
                         <MovieCard data = {obj} />
                     </li>
                 ))}

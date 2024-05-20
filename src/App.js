@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar/Navbar';
 import PopularMovies from './Components/PopularMovies/PopularMovies';
 import TopRated from './Components/TopRated/TopRated';
 import UpcomingMovies from './Components/UpcomingMovies/UpcomingMovies';
+import MovieDetails from './Components/MovieDetails/MovieDetails';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <Route exact path = "/" Component={PopularMovies}/>
         <Route exact path = "/top-rated" Component={TopRated}/>
         <Route exact path = "/upcoming-movies" Component={UpcomingMovies}/>
-        <Route exact path = "/:moviesID" Component={PopularMovies}/>
+        <Route exact path = "/movie/:moviesID" Component={MovieDetails}/>
         <Route exact path = "/" Component={PopularMovies}/>
       </Routes>
     </BrowserRouter>
